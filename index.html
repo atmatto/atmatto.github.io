@@ -42,6 +42,10 @@
                 margin: 16px 0 8px;
             }
 
+            h1 {
+                margin-bottom: 16px;
+            }
+
             h2 {
                 margin-top: 32px;
             }
@@ -76,10 +80,10 @@
                 color: var(--link-hover);
             }
 
-            /*.link:after {*/
-            /*    padding-left: 0.5ch;*/
-            /*    content: "→";*/
-            /*}*/
+            .link:after {
+                padding-left: 0.5ch;
+                content: "»";
+            }
 
             header {
                 margin-bottom: 64px;
@@ -95,48 +99,54 @@
         <div id="content">
             <header>
                 <h1>atmatto</h1>
-                <p>Shaping things with code, often reinventing the wheel in passing. Interested in mathematics and languages. Dabbling in competitive programming.</p>
+                <p>Shaping things with code, often reinventing the wheel in passing. Developing competencies by doing. Exploring the manifold fields of computer science. Pursuing my interest in mathematics and languages. Dabbling in competitive programming. Curious about how digital tools can aid people and support them in their endeavours.</p>
             </header>
             <main>
                 <h2>Projects</h2>
                 <h3>Stol</h3>
-                <p>Sticking dictionaries together with a duct tape. An app for language learners and translators. It lets the user search for a word in multiple sources at once.</p>
+                <p>Sticking dictionaries together with duct tape. An app for language learners and translators. It lets the user search for a word in multiple sources at once.</p>
                 <img src="stol.png">
                 <h3>Dro</h3>
                 <p>Minimal image manipulation program, made to edit screenshots and quickly draw some drafts. I plan to rewrite it, this time focusing on keyboard control.</p>
                 <img src="dro.png">
                 <h3>Anki Duolingo dictionary</h3>
-                <p>Anki addon. Before the Duolingo dictionary was discontinued, this let the user search for the definition and example sentences of a given word. It could be configured to almost automatically fetch the content from a selected field and strip all the unimportant words (e.g. articles).</p>
+                <p>Anki addon. Before the Duolingo dictionary was discontinued, this let the user search for the definition and example sentences of a given word. It could be configured to almost automatically fetch the content from a selected field and strip all the unimportant words from the search query (e.g. articles).</p>
                 <img src="anki.png">
                 <h3>Manesei</h3>
                 <p>Knowledge base and digital garden. Utilises Atylar, a storage system with version history. Features a simple, bespoke markup language. I plan to make it multi-user and add the possibility to publish your documents.</p>
                 <img src="manesei.png">
                 <h3>Anghelp</h3>
                 <p>Website about the English language made for a school group project. I created a static site generator with support for nested navigation and was in charge of the deployment. <a href="https://anghelp.ml" class="link">Visit</a></p>
+                <img src="anghelp.png">
                 <h3>Mapian</h3>
-                <p>OpenStreetMap-based procedural generation in Roblox. The player can choose a location to visit, which is then dynamically fetched and built. Features a chunk system which lets the user explore the world virtually infinitely without major difficulties. <a href="https://www.roblox.com/games/7931744751/Mapian" class="link">Play</a></p>
+                <p>OpenStreetMap-based procedural generation in Roblox. The player can choose a location to visit, which is then dynamically fetched and built. Features a chunk system that lets the user explore the world virtually infinitely without major difficulties. <a href="https://www.roblox.com/games/7931744751/Mapian" class="link">Play</a></p>
                 <img src="mapian1.png">
                 <img src="mapian2.png">
                 <h3>Granulat</h3>
-                <p>Simple KaTeX viewer and editor utilising browser local storage to let the user save files. They can be later opened, downloaded, and shared using a link which contains all the needed data.</p>
+                <p>Simple KaTeX viewer and editor utilising browser local storage to let the user save files. They can be later opened, downloaded, and shared using a link that contains all the needed data.</p>
                 <img src="granulat.png">
                 <h3>Arboretum</h3>
-                <p>Abandoned precursor of Manesei. Apart from a note system, it featured a storage system which could function as a cloud drive.</p>
+                <p>Abandoned precursor of Manesei. Apart from a note system, it featured a storage system that could function as a cloud drive.</p>
                 <video src="arboretum.mp4" autoplay muted loop></video>
                 <h3>Remin</h3>
                 <p>An unfinished journey log app. The user can mark different modes of transportation and add notes about them.</p>
                 <img src="remin.png">
+                <h3>Other projects</h3>
+                <p>Besides the described software, I also made many other creations. I thoroughly investigated the space of static site generators, scripted Roblox games, tinkered with 3D graphics and modelling, created a lot of small websites for personal use (or rather just for enjoyment), and customised my Linux environment by diverse means.</p>
+                <img src="terrain.png">
+                <img src="meander.png">
+                <img src="blender.jpg">
 
                 <h2>Interests</h2>
                 <p>I strive to make my software performant and efficient, and to understand thoroughly the dependencies I use, inspired by the <a href="https://handmade.network/">Handmade movement</a>. In order to achieve this, I study and employ the principles of <b>data-oriented</b> programming.</p>
-                <p>Game development is a field that played a big role in my journey of becoming a programmer. I'm especially interested in <b>procedural generation</b>. It's fascinating to create enormous worlds in a short time using code.</p>
-                <p>Preparing for programming competitions made me aware of many aspects of software performance and various useful algorithms. I'm dabbling in <b>competitive programming</b>. I'm currently participating in the Polish Olympiad in Informatics, and looking forward to taking part in other competitions.</p>
+                <p>Game development is a field that played a big role in my journey to become a programmer. I'm especially interested in <b>procedural generation</b>. It's fascinating to create enormous worlds in a short time using code.</p>
+                <p>Preparing for programming competitions made me aware of many aspects of software performance and various useful algorithms. I'm dabbling in <b>competitive programming</b>. I'm currently participating in the Polish Olympiad in Informatics and looking forward to taking part in other competitions.</p>
                 <p>I'm interested in <b>electronics</b> and <b>embedded programming</b>. I'm researching the inner workings of the Linux kernel because driver programming is something I'd like to try. I'd also like to design my own devices one day.</p>
+                <p>I like to open up a webpage in a language unknown to me and start reading about topics relevant to me (naturally not without a dictionary). I take an unconventional approach to learning <b>languages</b> and explore the different ways of fostering this process. I'm heavily inspired by the <a href="https://refold.la">Refold</a> community but employ a peculiar variant of their method. I'm also interested in <b>phonology</b> and the ways it makes exchanging thoughts about languages easier. I enjoy discovering the links between different words and I'm curious about the history of languages.</p>
                 <ul>
                     <li>Mathematics</li>
                     <li>Distributed systems, decentralisation</li>
-                    <li>Languages and phonology</li>
-                    <li>Contemporary history</li>
+                    <li>Contemporary history, economics</li>
                 </ul>
             </main>
             <footer>
