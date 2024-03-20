@@ -13,6 +13,10 @@
                 --fg: #333;
                 --link: #383;
                 --link-hover: #6a6;
+                --block-bg: #f3f2ef;
+                --block-shadow: #b4b4ba;
+                --block-head-bg: #e3e2df;
+                --block-head-fg: inherit;
             }
 
             @media (prefers-color-scheme: dark) {
@@ -21,6 +25,10 @@
                     --fg: #ffccbb;
                     --link: #ccffbb;
                     --link-hover: #bbddaa;
+                    --block-bg: #383836;
+                    --block-shadow: #686871;
+                    --block-head-bg: #4f4f4b;
+                    --block-head-fg: #ffe7df;
                 }
             }
 
@@ -97,14 +105,15 @@
             }
 
             .related {
-                background-color: #f3f2ef;
+                background-color: var(--block-bg);
                 border-radius: 10px;
                 padding: 10px 16px;
-                box-shadow: 1px 1px 4px #b4b4ba;
+                box-shadow: 1px 1px 4px var(--block-shadow);
             }
 
             .related > h4 {
-                background-color: #e3e2df;
+                background-color: var(--block-head-bg);
+                color: var(--block-head-fg);
                 margin: -10px -16px;
                 margin-bottom: 16px;
                 padding: 10px 16px 8px 16px;
