@@ -126,6 +126,29 @@
                 font-size: 75%;
                 margin-bottom: 6px;
             }
+
+            .imagerow {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+            }
+
+            .imagerow img {
+                height: auto;
+                width: 0;
+                flex-grow: 1;
+                flex-shrink: 0;
+                object-fit: cover;
+            }
+
+            .imagelimit {
+                display: flex;
+                justify-content: center;
+            }
+
+            .imagelimit img {
+                max-height: 500px;
+            }
         </style>
     </head>
     <body>
@@ -135,22 +158,50 @@
                 <p>Shaping things with code, often reinventing the wheel in passing. Always seeking for opportunities to develop competencies by doing. Exploring the manifold fields of computer science, trying to find my place. Pursuing my interest in mathematics and languages. Dabbling in the theory of performance optimisation and algorithms, and trying to apply it to real problems. Curious about how digital tools can aid people and support them in their endeavours.</p>
             </header>
             <main>
-                <h2>Professional experience</h2>
-                <h3><span class="timespan">July – September 2024</span> DevOps Engineer Internship, Eficode</h3>
-                <ul>
-                    <li>Ansible – server and application provisioning</li>
-                    <li>Linux server administration</li>
-                    <li>Cloud: Terraform (infrastructure as code), AWS, Azure, GCP</li>
-                    <li>Configuration and maintanance of enterprise applications: GitLab, Jenkins, SonarQube, Confluence, Jira, Bitbucket</li>
-                    <li>Monitoring: Zabbix, Grafana</li>
-                    <li>Database maintenance (PostgreSQL)</li>
-                    <li>Containers</li>
-                    <li>Planning and execution of server migrations and disaster recovery testing</li>
-                    <li>Computer networks: firewalls, proxies, NAT</li>
-                    <li>Security: SSO, Keycloak, SAML, PKI, Kerberos, FreeIPA, SSSD</li>
-                    <li>Writing documentation and guides</li>
-                </ul>
+                <!-- <h2>Professional experience</h2> -->
+                <!-- <h3><span class="timespan">July – September 2024</span> DevOps Engineer Internship, Eficode</h3> -->
+                <!-- <ul> -->
+                    <!-- <li>Ansible – server and application provisioning</li> -->
+                    <!-- <li>Linux server administration</li> -->
+                    <!-- <li>Cloud: Terraform (infrastructure as code), AWS, Azure, GCP</li> -->
+                    <!-- <li>Configuration and maintanance of enterprise applications: GitLab, Jenkins, SonarQube, Confluence, Jira, Bitbucket</li> -->
+                    <!-- <li>Monitoring: Zabbix, Grafana</li> -->
+                    <!-- <li>Database maintenance (PostgreSQL)</li> -->
+                    <!-- <li>Containers</li> -->
+                    <!-- <li>Planning and execution of server migrations and disaster recovery testing</li> -->
+                    <!-- <li>Computer networks: firewalls, proxies, NAT</li> -->
+                    <!-- <li>Security: SSO, Keycloak, SAML, PKI, Kerberos, FreeIPA, SSSD</li> -->
+                    <!-- <li>Writing documentation and guides</li> -->
+                <!-- </ul> -->
                 <h2>Projects</h2>
+                <h3><span class="timespan">Lodz Solar Team</span> Race track map editor</h3>
+                <p>Part of an energy use simulator and race strategy optimizer. Race track editor based on Typescript and React. Supports project saving and layer management. Allows to edit polylines and splines and export them with elevation and curvature calculation. <a href="race-track-editor.pdf" class="link">Slides</a></p>
+                <img src="lst-editor.png">
+                <h3>Mobile applications</h3>
+                <p>Several Android applications using Jetpack Compose and Kotlin.</p>
+                <p>Full-featured basic task management application. Modular architecture with focus on best practices. Storage in Room Database. Attachments, notifications and alarms, searching and filtering. Following Material Design 3 guidelines. <a href="https://github.com/atmatto/tasks-android" class="link">Source code</a></p>
+                <div class="imagerow">
+                    <img src="tasks.png">
+                    <img src="tasks-task.png">
+                </div>
+                <div class="imagerow">
+                    <img src="tasks-search.png">
+                    <img src="tasks-settings.png">
+                </div>
+                <p>GPS tracker working with Room Database, Google Play services location API, foreground services, quick settings tiles, and WebDAV backup upload.</p>
+                <div class="imagelimit">
+                    <img src="remin-android.png">
+                </div>
+                <h3>Punch the Lights</h3>
+                <p>Virtual reality game created in Unity and programmed in C#.</p>
+                <img src="vr.png">
+                <h3><span class="timespan">Lodz Solar Team</span> Visual odometry</h3>
+                <p>Computer vision solution for vehicle trajectory estimation based on Python, OpenCV, NumPy, and SciPy. I focused on improving precision, optimisation, code quality, and user friendliness. Our presentation of the project during the XLII International Student Seminar on Mechanical Engineering at the Military University of Technology in Warsaw was awarded as the best in the category of 1<sup>st</sup> and 2<sup>nd</sup> year students. <a href="vo.pdf" class="link">Slides</a></p>
+                <img src="vo.gif">
+                <h3>Language app</h3>
+                <p>Full-stack content manager for a language learning app, inspired by Tatoeba. Allows to create and modify languages, sentences, and words. The backend is written in Java with Spring Boot and interacts with a PostgreSQL database using Hibernate ORM. Includes custom error handling, account management, authorization, and authentication. The frontend is written in TypesScript with Angular and is structured around a custom synchronisation engine. <a href="https://github.com/atmatto/language-app" class="link">Source code</a></p>
+                <img src="lapp1.png">
+                <img src="lapp2.png">
                 <h3>Database</h3>
                 <p>Relational database written in Java. Allows to store data in multiple tables with typed columns. Interactions are provided through a user-friendly command-line interface with descriptive error messages. SQL queries are parsed using a recursive descent parser and complex expressions are supported by a parser inspired by top-down operator precedence parsers. All standard join operations are supported. Data can be selected, updated, and deleted. Database content is serialised to JSON and saved on disk. <a href="https://github.com/atmatto/database" class="link">Source code and demo</a></p>
                 <h3>PyTrain</h3>
@@ -189,6 +240,7 @@
                 </div>
                 <h3>Anghelp</h3>
                 <p>Website about the English language made for a school group project. I created a static site generator with support for nested navigation and was in charge of the deployment. <a href="https://anghelp.github.io" class="link">Visit</a></p>
+                <!-- TODO: Slides? -->
                 <img src="anghelp.png">
                 <div class="related">
                     <h4>Related projects</h4>
@@ -239,7 +291,7 @@
                 <p>The theory and practice of <b>distributed systems</b> is important for the world of today. Together with the principles of designing scalable and reliable backend infrastructures, this is something I would like to delve into.</p>
             </main>
             <footer>
-                <a href="https://github.com/atmatto">Github</a> · <a href="https://www.linkedin.com/in/atmatto">LinkedIn</a> · <a href="https://fosstodon.org/@atmatto" rel="me">Mastodon</a>
+                <a href="https://github.com/atmatto">Github</a> · <a href="https://www.linkedin.com/in/atmatto">LinkedIn</a><!-- · <a href="https://fosstodon.org/@atmatto" rel="me">Mastodon</a>-->
             </footer>
         </div>
     </body>
